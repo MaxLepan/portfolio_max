@@ -1,0 +1,104 @@
+html {
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    text-underline-style: none;
+    color: black;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+#welcome {
+    position: absolute;
+    width: 100vw;
+    vertical-align: center;
+    top: 40vh;
+
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 32px;
+}
+
+.project-number {
+    position: relative;
+
+    /*font-style: normal;
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 0.75;*/
+    font: normal normal bold 163px/204px commuters-sans, sans-serif;
+    color: #7B7B7B;
+
+    left: -28px;
+    top: 45vh;
+}
+
+#projects-container {
+    position: relative;
+    top: 100vh;
+}
+
+
+
+.projects {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+
+}
+
+.project-img-container {
+    position: absolute;
+    display: inline-block;
+    left: calc(50% - 439px/2);
+    vertical-align: center;
+
+    transform: rotate(-23deg);
+    transition: 0.3s;
+}
+
+.project-img-container:hover {
+    transform: rotate(-10deg);
+    transition: 0.3s;
+}
+
+.project-img {
+    position: relative;
+    width: 439px;
+    height: 559px;
+    background-color: #0BA1FF;
+}
+
+.project-info {
+    position: relative;
+    left: 15vw;
+    top: 33vh;
+    width: fit-content;
+    text-align: center;
+    font: normal normal 21px commuters-sans, sans-serif;
+}
+
+#carousel {
+    position: relative;
+    display: inline-flex;
+    top: 100vh;
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+
+ul {
+    display: inline-flex;
+    list-style: none;
+}
+
+.carousel-projects {
+    width: 330px;
+    height: 420px;
+    margin: 73px;
+
+    background-color: #6F7070;
+}

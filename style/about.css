@@ -1,0 +1,61 @@
+.secondary-text {
+    font-family: commuters-sans, sans-serif;
+    font-size: 21px;
+}
+
+#about-container {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+
+    top: 10vh;
+}
+
+#names-container {
+    position: relative;
+    text-align: center;
+    width: fit-content;
+    top: 35%;
+    left: 7vw;
+}
+
+#img-container {
+    position: absolute;
+    display: inline-block;
+    width: 440px;
+    height: 560px;
+
+    left: calc(33% - 439px/2);
+    background-color: #0BA1FF;
+
+    transform: rotate(-23deg);
+    transition: 0.3s;
+}
+
+#img-container:hover {
+    transform: rotate(-10deg);
+    transition: 0.3s;
+}
+
+#desc-container {
+    position: relative;
+    top: 20vh;
+    left: 57vw;
+    width: 33vw;
+}
+
+#social {
+    margin-top: 20px;
+}
+
+.social-media {
+    margin-left: 30px;
+}
+
+#mail-contact {
+    position: relative;
+    display: block;
+    margin-bottom: 195px;
+    text-align: center;
+    font-size: 30px;
+}
