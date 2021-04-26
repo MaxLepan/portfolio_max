@@ -4,7 +4,7 @@
     z-index: 15;
     width: 100px;
     left: 55px;
-    top: 83vh;
+    top: 500px;
 
     animation: rotation 20s infinite linear;
 }
