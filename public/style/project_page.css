@@ -1,0 +1,72 @@
+#project-wrapper {
+    position: relative;
+    overflow: visible;
+}
+
+#first-piece {
+    position: relative;
+    display: inline-flex;
+    height: 100vh;
+}
+
+#main-prj-img-container {
+    position: absolute;
+    display: inline-block;
+    width: 440px;
+    height: 560px;
+
+    left: calc(40% - 439px/2);
+    background-color: #0BA1FF;
+
+    transform: rotate(-23deg);
+    transition: 0.3s;
+}
+
+#main-prj-img-container:hover {
+    transform: rotate(-10deg);
+    transition: 0.3s;
+}
+
+#project-name-type {
+    position: relative;
+    width: fit-content;
+    text-align: center;
+    top: 20%;
+    left: 10%;
+}
+
+#prj-descr {
+    position: relative;
+    width: 33%;
+    margin-left: auto;
+    margin-right: 146px;
+
+    top: 10%;
+}
+
+#prj-img-container {
+    overflow: hidden;
+}
+
+
+.prj-imgs {
+    width: 1150px;
+    height: 560px;
+    border: solid black 2px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 150px;
+}
+
+#prj-bg {
+    position: absolute;
+    top: auto;
+    left: 0;
+    height: 100%;
+    width: 100%;
+
+    background-repeat: no-repeat;
+    background-image: url("../media/fond_chevrons.png");
+    opacity: 0.1;
+}
+

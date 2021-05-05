@@ -1,0 +1,30 @@
+{
+  "name": "portfolio-apolline",
+  "version": "1.0.0",
+  "description": "Apolline Grember's online portfolio",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MaxLepan/portfolio_apolline.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MaxLepan/portfolio_apolline/issues"
+  },
+  "homepage": "https://github.com/MaxLepan/portfolio_apolline#readme",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}

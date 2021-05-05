@@ -1,0 +1,33 @@
+#footer {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+
+    width: calc(100vw - (2*91px));
+    height: 55px;
+    padding: 15px 91px;
+    background-color: #165F96;
+
+    font-family: commuters-sans, sans-serif;
+    font-style: normal;
+    font-size: 21px;
+    color: white;
+}
+
+#website-credits {
+    position: relative;
+    right: 0;
+    text-align: right;
+    transform: translate(0, 25%);
+}
+
+#credit {
+    position: relative;
+    float: left;
+    transform: translate(0, 25%);
+}
+
+#footer-content {
+    transform: translate(0, 40%);
+    vertical-align: center;
+}

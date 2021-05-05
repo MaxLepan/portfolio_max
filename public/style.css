@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import "public/style/footer.css";
+@import "public/style/reset.css";
+@import "public/style/header.css";
+@import "public/style/index.css";
+@import "public/style/about.css";
+@import "public/style/circle.css";
+@import "public/style/project_page.css";
+@import "public/splide-2.4.21/dist/css/splide-core.min.css";

@@ -1,0 +1,25 @@
+
+.my-projects-circle {
+    position: fixed;
+    z-index: 14;
+    width: 100px;
+
+    left: 55px;
+    top: 77vh;
+
+    animation: rotation 20s infinite linear;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(359deg);
+    }
+}
+
+#my-projects-circle:hover {
+    cursor: pointer;
+}
+
