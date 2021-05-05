@@ -44,29 +44,12 @@
     top: 10%;
 }
 
-#prj-img-container {
-    overflow: hidden;
-}
-
-
 .prj-imgs {
     width: 1150px;
     height: 560px;
-    border: solid black 2px;
+    border: solid white 2px;
     margin-right: auto;
     margin-left: auto;
     margin-top: 150px;
-}
-
-#prj-bg {
-    position: absolute;
-    top: auto;
-    left: 0;
-    height: 100%;
-    width: 100%;
-
-    background-repeat: no-repeat;
-    background-image: url("../media/fond_chevrons.png");
-    opacity: 0.1;
 }
 

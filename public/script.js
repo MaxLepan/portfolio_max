@@ -1,3 +1,3 @@
-import "./public/scripts/carrousel.js";
-import "./public/scripts/circle.js";
-import "./public/scripts/anim.js";
+import "./scripts/carrousel.js";
+import "./scripts/circle.js";
+import "./scripts/anim.js";
