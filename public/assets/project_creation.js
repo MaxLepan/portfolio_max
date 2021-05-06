@@ -32,7 +32,7 @@ export const singleProjectCreation = (getProject, /*link,*/ allowTag = true) => 
 
             div.innerHTML = data[projectOnPage].description;
 
-
+            console.log(div);
 
             singleProject.innerHTML = `
                 <div id="first-piece">
