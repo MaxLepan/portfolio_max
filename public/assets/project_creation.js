@@ -25,47 +25,7 @@ export const singleProjectCreation = (getProject, /*link,*/ allowTag = true) => 
 
         let projectTitleType = data[projectOnPage].title.split(" - ");
 
-        if (data[projectOnPage].tags.find(tag => tag === "game")){
-
-            let gamePage = document.implementation.createHTMLDocument("Game");
-            let div = gamePage.createElement("div");
-
-            div.innerHTML = data[projectOnPage].description;
-
-            gamePage.body.appendChild(div)
-
-            console.log(div);
-
-            singleProject.innerHTML = `
-                <div id="first-piece">
-                        <div id="project-infos">
-                            <div id="project-name-type">
-                                <p>${projectOnPage} · ${projectTitleType[0]}</p>
-                                <p>${projectTitleType[1]}</p>
-                            </div>
-                            <iframe class="gameIframe" title="${projectTitleType[0]}" height="600" width="600" src="about:blank"></iframe>
-                            <div id="prj-descr"><p>${data[projectOnPage].description}</p></div>
-                        </div>
-                        <div id="skills-carousel"></div>
-                    </div>
-                    <div id="prj-img-container">
-                </div>
-            `
-
-            let frame = document.querySelector(".gameIframe");
-
-            let destDocument = frame.contentDocument;
-            let srcNode = gamePage.documentElement;
-            let newNode = destDocument.importNode(srcNode, true);
-
-            destDocument.replaceChild(newNode, destDocument.documentElement);
-
-            console.log(destDocument)
-
-        } else {
-
-
-            singleProject.innerHTML = `
+                    singleProject.innerHTML = `
                 <div id="first-piece">
                     <div id="project-infos">
                         <div id="project-name-type">
@@ -84,8 +44,6 @@ export const singleProjectCreation = (getProject, /*link,*/ allowTag = true) => 
 
                 </div>
         `
-
-        }
 
         const secondaryImgContainer = document.querySelector("#prj-img-container");
 

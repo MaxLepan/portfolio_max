@@ -31,7 +31,6 @@ requestProjects().then(response => {
                         <a href="" id="${data.id}" class="carousel-projects">
                             <img src="${carouselImg}" class="carousel-img">
                         </a>
-                        
                     </li>`
         }
 
