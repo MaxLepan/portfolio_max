@@ -57,6 +57,8 @@ export const singleProjectCreation = (getProject, /*link,*/ allowTag = true) => 
 
             destDocument.replaceChild(newNode, destDocument.documentElement);
 
+            console.log(destDocument)
+
         } else {
 
 
