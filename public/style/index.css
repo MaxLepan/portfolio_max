@@ -103,4 +103,19 @@ ul {
     margin: 73px;
 
     background-color: #6F7070;
+    transition: 0.3s;
+}
+
+.carousel-projects:hover {
+    transform: rotate(-15deg);
+
+    transition: 0.3s;
+}
+
+.carousel-img {
+    position: absolute;
+    object-fit: cover;
+    height: 210%;
+    top: -55%;
+    left: -124%;
 }
