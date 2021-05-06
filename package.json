@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/MaxLepan/portfolio_apolline#readme",
   "dependencies": {
+    "@splidejs/splide": "^2.4.21",
     "axios": "^0.21.1",
     "cors": "^2.8.5",
     "dotenv": "^8.2.0",
