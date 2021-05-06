@@ -32,6 +32,8 @@ export const singleProjectCreation = (getProject, /*link,*/ allowTag = true) => 
 
             div.innerHTML = data[projectOnPage].description;
 
+            gamePage.body.appendChild(div)
+
             console.log(div);
 
             singleProject.innerHTML = `
