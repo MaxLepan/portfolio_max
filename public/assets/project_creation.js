@@ -27,6 +27,12 @@ export const singleProjectCreation = (getProject, /*link,*/ allowTag = true) => 
 
         if (data[projectOnPage].tags.find(tag => tag === "game")){
 
+            let gamePage = document.implementation.createHTMLDocument("Game");
+
+            gamePage.innerHTML = data[projectOnPage].description;
+
+
+
             singleProject.innerHTML = `
                 <div id="first-piece">
                         <div id="project-infos">
@@ -34,7 +40,7 @@ export const singleProjectCreation = (getProject, /*link,*/ allowTag = true) => 
                                 <p>${projectOnPage} · ${projectTitleType[0]}</p>
                                 <p>${projectTitleType[1]}</p>
                             </div>
-                            <iframe class="gameIframe" title="${projectTitleType[0]}" height="600" width="600" src="https://fr.khanacademy.org/computer-programming/zeldapokemon-like/5953439003000832/embed.js?editor=no&buttons=no&author=yes&embed=yes"></iframe>
+                            <iframe class="gameIframe" title="${projectTitleType[0]}" height="600" width="600" src="about:blank"></iframe>
                             <div id="prj-descr"><p>${data[projectOnPage].description}</p></div>
                         </div>
                         <div id="skills-carousel"></div>
@@ -42,6 +48,14 @@ export const singleProjectCreation = (getProject, /*link,*/ allowTag = true) => 
                     <div id="prj-img-container">
                 </div>
             `
+
+            let frame = document.querySelector(".gameIframe");
+
+            let destDocument = frame.contentDocument;
+            let srcNode = gamePage.documentElement;
+            let newNode = destDocument.importNode(srcNode, true);
+
+            destDocument.replaceChild(newNode, destDocument.documentElement);
 
         } else {
 

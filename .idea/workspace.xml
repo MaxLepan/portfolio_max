@@ -12,13 +12,6 @@
   <component name="ChangeListManager">
     <list default="true" id="1dc62d36-0f2a-4043-8eaa-e6d27e79c29f" name="Default Changelist" comment="Added project page + fixed bugs">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/about.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/about.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/project_creation.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/project_creation.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/projects.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/projects.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/promoted_projects.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/promoted_projects.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/request.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/request.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/style/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/style/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/style/project_page.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/style/project_page.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,7 +75,7 @@
       <workItem from="1619346325752" duration="14350000" />
       <workItem from="1619449726423" duration="6612000" />
       <workItem from="1619536412009" duration="459000" />
-      <workItem from="1620284985472" duration="14443000" />
+      <workItem from="1620284985472" duration="15153000" />
     </task>
     <task id="LOCAL-00001" summary="Added import in script.js">
       <created>1619451404733</created>
