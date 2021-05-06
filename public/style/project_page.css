@@ -1,6 +1,8 @@
 #project-wrapper {
     position: relative;
     overflow: visible;
+    top: 15vh;
+    margin-bottom: 150px;
 }
 
 #first-piece {
@@ -12,11 +14,11 @@
 #main-prj-img-container {
     position: absolute;
     display: inline-block;
-    width: 440px;
-    height: 560px;
+    width: 480px;
+    height: 570px;
+    overflow: hidden;
 
     left: calc(40% - 439px/2);
-    background-color: #0BA1FF;
 
     transform: rotate(-23deg);
     transition: 0.3s;
@@ -25,6 +27,14 @@
 #main-prj-img-container:hover {
     transform: rotate(-10deg);
     transition: 0.3s;
+}
+
+#main-prj-img {
+    position: absolute;
+    left: -120%;
+    top: -57%;
+    height: 217%;
+    object-fit: cover;
 }
 
 #project-name-type {
@@ -44,12 +54,37 @@
     top: 10%;
 }
 
-.prj-imgs {
+.prj-img-wrapper {
+    position: relative;
     width: 1150px;
     height: 560px;
-    border: solid white 2px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 150px;
+    overflow: hidden;
+}
+
+.prj-imgs {
+    position: absolute;
+    left: -19%;
+    top: -84%;
+    height: 215%;
+
     margin-right: auto;
     margin-left: auto;
     margin-top: 150px;
 }
 
+#car-bg-img-wrapper {
+    position: absolute;
+    overflow: hidden;
+    width: 1242px;
+    height: 699px;
+    margin-top: 150px;
+    right: 0;
+}
+
+#car-img-bg {
+    width: 100%;
+}

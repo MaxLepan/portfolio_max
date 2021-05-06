@@ -16,6 +16,12 @@ const requestProjects = async () => {
 
             let projectTitleType = data.title.split(" - ");
 
+            let singleProjectImg = data.images.hidpi;
+
+            if (singleProjectImg === null) {
+                singleProjectImg = data.images.normal;
+            }
+
             if (data.description !== null && (data.tags.find(element => element === "1") || data.tags.find(element => element === "2") || data.tags.find(element => element === "3"))){
 
                 let projectNumber;
@@ -38,7 +44,7 @@ const requestProjects = async () => {
                         <p>${projectTitleType[1]}</p>
                     </div>
                     <a id="project1-img-container" class="project-img-container" href="pages/project.html?projectId=${data.id}">
-                        <img src="${data.images.hidpi}" class="project-img" id="project-img${projectNumber}">
+                        <img src="${singleProjectImg}" class="project-img" id="project-img${projectNumber}">
                     </a>
                 </div>`
             }

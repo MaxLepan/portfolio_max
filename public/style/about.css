@@ -27,6 +27,7 @@
 
     left: calc(33% - 439px/2);
     background-color: #0BA1FF;
+    overflow: hidden;
 
     transform: rotate(-23deg);
     transition: 0.3s;

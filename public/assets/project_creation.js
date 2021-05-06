@@ -72,11 +72,17 @@ export const singleProjectCreation = (getProject, /*link,*/ allowTag = true) => 
 
         data.forEach(imgData => {
 
+            let projectImg = imgData.images.hidpi;
+
+            if (projectImg === null) {
+                projectImg = imgData.images.normal;
+            }
+
             if (imgData.description === null && data[projectOnPage].title === imgData.title) {
 
                 secondaryImgContainer.innerHTML += `
                                                 <div class="prj-img-wrapper">
-                                                    <img src="${imgData.images.hidpi}" class="prj-imgs">
+                                                    <img src="${projectImg}" class="prj-imgs">
                                                 </div>
             `
             }
