@@ -1,4 +1,3 @@
-import Splide from "../splide-2.4.21/src/js/splide.js";
 
 new Splide( '.splide' , {
     type: "loop",
