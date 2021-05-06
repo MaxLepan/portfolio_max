@@ -28,8 +28,9 @@ export const singleProjectCreation = (getProject, /*link,*/ allowTag = true) => 
         if (data[projectOnPage].tags.find(tag => tag === "game")){
 
             let gamePage = document.implementation.createHTMLDocument("Game");
+            let div = gamePage.createElement("div");
 
-            gamePage.innerHTML = data[projectOnPage].description;
+            div.innerHTML = data[projectOnPage].description;
 
 
 
