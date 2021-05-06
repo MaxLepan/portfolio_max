@@ -11,6 +11,10 @@
     height: 100vh;
 }
 
+#project-infos {
+    width: 100vw;
+}
+
 #main-prj-img-container {
     position: absolute;
     display: inline-block;
@@ -48,6 +52,7 @@
 #prj-descr {
     position: relative;
     width: 33%;
+    left: 3%;
     margin-left: auto;
     margin-right: 146px;
 
@@ -67,9 +72,9 @@
 
 .prj-imgs {
     position: absolute;
-    left: -19%;
-    top: -84%;
-    height: 215%;
+    left: 0;
+    top: 0;
+    height: 100%;
 
     margin-right: auto;
     margin-left: auto;

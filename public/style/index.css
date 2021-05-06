@@ -98,11 +98,15 @@ ul {
 }
 
 .carousel-projects {
+    position: relative;
     width: 330px;
     height: 420px;
     margin: 73px;
 
-    background-color: #6F7070;
+    overflow: hidden;
+    display: flex;
+    text-align: center;
+
     transition: 0.3s;
 }
 

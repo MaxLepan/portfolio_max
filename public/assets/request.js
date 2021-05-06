@@ -1,6 +1,6 @@
 export const requestServer = async (path) => {
-    //const APILocation = "http://localhost:3000/"
-    const APILocation = "https://maxlepan.herokuapp.com/";
+    const APILocation = "http://localhost:3000/"
+    //const APILocation = "https://maxlepan.herokuapp.com/";
 
     const response = await axios.get(`${APILocation}${path}`)
 

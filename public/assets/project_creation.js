@@ -25,7 +25,28 @@ export const singleProjectCreation = (getProject, /*link,*/ allowTag = true) => 
 
         let projectTitleType = data[projectOnPage].title.split(" - ");
 
-        singleProject.innerHTML = `
+        if (data[projectOnPage].tags.find(tag => tag === "game")){
+
+            singleProject.innerHTML = `
+                <div id="first-piece">
+                        <div id="project-infos">
+                            <div id="project-name-type">
+                                <p>${projectOnPage} · ${projectTitleType[0]}</p>
+                                <p>${projectTitleType[1]}</p>
+                            </div>
+                            <iframe class="gameIframe" title="${projectTitleType[0]}" height="600" width="600" src="https://fr.khanacademy.org/computer-programming/zeldapokemon-like/5953439003000832/embed.js?editor=no&buttons=no&author=yes&embed=yes"></iframe>
+                            <div id="prj-descr"><p>${data[projectOnPage].description}</p></div>
+                        </div>
+                        <div id="skills-carousel"></div>
+                    </div>
+                    <div id="prj-img-container">
+                </div>
+            `
+
+        } else {
+
+
+            singleProject.innerHTML = `
                 <div id="first-piece">
                     <div id="project-infos">
                         <div id="project-name-type">
@@ -44,6 +65,8 @@ export const singleProjectCreation = (getProject, /*link,*/ allowTag = true) => 
 
                 </div>
         `
+
+        }
 
         const secondaryImgContainer = document.querySelector("#prj-img-container");
 
