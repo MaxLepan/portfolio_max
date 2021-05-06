@@ -1,3 +1,5 @@
+import Splide from "../splide-2.4.21/src/js/components/elements/slide";
+
 new Splide( '.splide' , {
     type: "loop",
     perPage: 4,
