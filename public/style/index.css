@@ -39,6 +39,10 @@ a:hover {
     top: 45vh;
 }
 
+.slash {
+    color: black;
+}
+
 #projects-container {
     position: relative;
     margin-top: 100vh;

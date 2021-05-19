@@ -38,7 +38,7 @@ const requestProjects = async () => {
                 
 
                 <div id="project${projectNumber}" class="projects">
-                    <a class="project-number" id="project-number${projectNumber}" href="pages/project.html?projectId=${data.id}">0${projectNumber}</a>
+                    <a class="project-number" id="project-number${projectNumber}" href="pages/project.html?projectId=${data.id}">0${projectNumber} <span class="slash">/</span></a>
                     <div class="project-info">
                         <a href="pages/project.html?projectId=${data.id}">0${projectNumber} · ${projectTitleType[0]}</a>
                         <p>${projectTitleType[1]}</p>
